@@ -11,7 +11,7 @@ namespace ImageShackApi
     {
         public static string ApiKey { get; set; }
 
-        public static string UploadImage(string filePath)
+        public static UploadResult UploadImage(string filePath)
         {
             if (string.IsNullOrWhiteSpace(ApiKey))
             {
@@ -23,6 +23,10 @@ namespace ImageShackApi
             {
                 throw new FileNotFoundException($"file not found: {filePath}");
             }
+
+            var result = new UploadResult();
+
+            return result;
         }
     }
 }
