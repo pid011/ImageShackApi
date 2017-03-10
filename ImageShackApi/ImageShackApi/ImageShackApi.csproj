@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tools.cs" />
     <Compile Include="UploadResult.cs" />
     <Compile Include="ImageShackUploader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
