@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageShackApi", "ImageShackApi\ImageShackApi.csproj", "{9643ABEF-A4E7-498B-9292-89A52C52A9B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageShackApiTest", "ImageShackApiTest\ImageShackApiTest.csproj", "{5310B36B-7349-4299-ACBC-61D8CC713209}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{9643ABEF-A4E7-498B-9292-89A52C52A9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9643ABEF-A4E7-498B-9292-89A52C52A9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9643ABEF-A4E7-498B-9292-89A52C52A9B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5310B36B-7349-4299-ACBC-61D8CC713209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5310B36B-7349-4299-ACBC-61D8CC713209}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5310B36B-7349-4299-ACBC-61D8CC713209}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5310B36B-7349-4299-ACBC-61D8CC713209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

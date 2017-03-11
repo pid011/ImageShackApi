@@ -11,10 +11,21 @@ using System.Threading.Tasks;
 
 namespace ImageShackApi
 {
+    /// <summary>
+    /// ImageShack image uploader class.
+    /// </summary>
     public class ImageShackUploader
     {
+        /// <summary>
+        /// API key. this property is must be filled.
+        /// </summary>
         public static string ApiKey { get; set; }
 
+        /// <summary>
+        /// Upload the image to ImageShack.
+        /// </summary>
+        /// <param name="filePath">path of file.</param>
+        /// <returns>uploaded result</returns>
         public static UploadResult UploadImage(string filePath)
         {
             if (string.IsNullOrWhiteSpace(ApiKey))
