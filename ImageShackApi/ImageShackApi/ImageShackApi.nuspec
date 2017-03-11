@@ -5,11 +5,11 @@
     <version>$version$</version>
     <title>ImageShackApi</title>
     <authors>Sepi</authors>
-    <licenseUrl>https://github.com/pid011/MiOP/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/pid011/MiOP</projectUrl>
+    <licenseUrl>https://github.com/pid011/ImageShackApi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/pid011/ImageShackApi</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Upload image to ImageShack. (.NET version)</description>
-    <releaseNotes>You can see the https://github.com/pid011/MiOP/commits/release</releaseNotes>
+    <releaseNotes>You can see the https://github.com/pid011/ImageShackApi/commits/master </releaseNotes>
     <copyright>Copyright Sepi 2017</copyright>
     <tags>ImageShack</tags>
     <dependencies>
