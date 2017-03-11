@@ -15,7 +15,6 @@ namespace ImageShackApiTest
             var result = ImageShackUploader.UploadImage(@"D:\sepi_prst\Pictures\20170221_111238.jpg");
 
             Assert.AreNotSame(result.Links.ImageLink, null);
-
         }
     }
 }
