@@ -14,7 +14,8 @@ namespace ImageShackApiTest
             ImageShackUploader.ApiKey = "269EFIJL61c2b056e30d6c142b1714e26725e591";
             var result = ImageShackUploader.UploadImage(@"D:\sepi_prst\Pictures\20170221_111238.jpg");
 
-            Debug.WriteLine(result.Links.ImageLink);
+            Assert.AreNotSame(result.Links.ImageLink, null);
+
         }
     }
 }

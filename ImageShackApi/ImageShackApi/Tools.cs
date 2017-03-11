@@ -38,5 +38,11 @@ namespace ImageShackApi
                     return "image/unknown";
             }
         }
+
+        public static void Write(MemoryStream p_memoryStream, String p_data)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes(p_data);
+            p_memoryStream.Write(bytes, 0, bytes.Length);
+        }
     }
 }
