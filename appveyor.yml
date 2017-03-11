@@ -1,0 +1,25 @@
+-
+  version: 1.20.{build}
+  platform: Any CPU
+  configuration: Release
+  branches:
+    only:
+      - release
+  build:
+    publish_nuget: true
+  before_build:
+  - cmd: nuget restore ImageShackApi\ImageShackApi.sln
+  after_test:
+  - cmd: nuget pack "ImageShackApi\ImageShackApi.nuspec" -Version %APPVEYOR_BUILD_VERSION%
+  artifacts:
+  - path: '*.nupkg'
+    name: NuGetPackage
+
+  deploy:
+  - provider: NuGet
+    api_key:
+      secure: IVtCkzUyoWfB41SzwMVeaYMMXwCLHjvzY7k6QW7K1GGpo8cwlN280QHWtD+qQFvp
+    artifact: NuGetPackage
+    on:
+      platform: Any CPU
+      configuration: Release
