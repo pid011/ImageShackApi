@@ -10,7 +10,7 @@
   before_build:
   - cmd: nuget restore ImageShackApi\ImageShackApi.sln
   after_test:
-  - cmd: nuget pack "ImageShackApi\ImageShackApi.nuspec" -Version %APPVEYOR_BUILD_VERSION%
+  - cmd: nuget pack "ImageShackApi\ImageShackApi\ImageShackApi.nuspec" -Version %APPVEYOR_BUILD_VERSION%
   artifacts:
   - path: '*.nupkg'
     name: NuGetPackage
